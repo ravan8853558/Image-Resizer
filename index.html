@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic AI Image Resizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><span>AI Image Resizer</span></h1>
+      <p>Resize your images seamlessly with futuristic precision.</p>
+    </div>
+    <div class="upload-section">
+      <label for="upload" class="custom-upload-btn">Upload Image</label>
+      <input type="file" id="upload" accept="image/*" hidden>
+    </div>
+    <div class="resize-section">
+      <div class="input-group">
+        <label for="width">Width (px):</label>
+        <input type="number" id="width" placeholder="e.g., 800">
+      </div>
+      <div class="input-group">
+        <label for="height">Height (px):</label>
+        <input type="number" id="height" placeholder="e.g., 600">
+      </div>
+      <button id="resize-btn" class="btn">Resize Image</button>
+    </div>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <a id="download-btn" class="btn download-btn" style="display: none;" download="resized-image.png">Download Resized Image</a>
+    <div id="preview" class="preview"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

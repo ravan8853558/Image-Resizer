@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.header h1 span {
+  color: #00ffcc;
+  font-size: 1.8em;
+  text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+}
+
+.header p {
+  margin: 10px 0 20px;
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.custom-upload-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(120deg, #00ffcc, #1d976c);
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-upload-btn:hover {
+  background: linear-gradient(120deg, #1d976c, #00ffcc);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+input[type="number"]::placeholder {
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(120deg, #ff5f6d, #ffc371);
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: linear-gradient(120deg, #ffc371, #ff5f6d);
+}
+
+.download-btn {
+  margin-top: 20px;
+}
+
+.preview img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
